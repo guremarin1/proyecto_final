@@ -3,6 +3,10 @@
 'Lato', sans-serif; */
 @import url('https://fonts.googleapis.com/css2? family= DM+Serif+Display & family= Lato:wght@100;300;400;700 & display=swap');
 
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+
 :root{
     --pink:#F2708B;
     --bronw: #542d24;
