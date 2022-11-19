@@ -529,11 +529,12 @@ span{
     margin-top: 4.5rem;
     cursor: pointer;
   }
-
+  .boxx {
+    max-width: 80vw;
+  }
   .boxx img{
-    max-width: 100%;
+    max-width: 90%;
     width: 500px;
-    max-width: 95%;
     height: auto;
     background-size: cover;
     background-position: center;
