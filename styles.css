@@ -27,7 +27,6 @@
 body{
     min-height: 100vh;
     background-color: var(--white);
-    overflow-x: hidden;
     
 }
 
@@ -165,13 +164,16 @@ span{
     transition: all 0.5s ease;
 }
 
-
+.mobile-nav-wrapper {
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+}
 #header-mobile {
     min-width: 400px;
     background: var(--soft-white);
     height: 100%;
     position: fixed;
-    position: absolute;
     right: 0;
     transition: 0.5s;
 }
@@ -191,7 +193,7 @@ span{
     font-size: 1.5rem;
 }
 .hide-mobile-nav {
-    right: -100% !important;
+    right: -150% !important;
 }
 /* __Main__ */
 
