@@ -175,7 +175,7 @@ span{
     height: 100%;
     position: fixed;
     right: 0;
-    transition: 0.5s;
+    transition: 1s;
 }
 #header-mobile .nav-links{
     display: flex;
@@ -193,7 +193,7 @@ span{
     font-size: 1.5rem;
 }
 .hide-mobile-nav {
-    right: -150% !important;
+    right: -200% !important;
 }
 /* __Main__ */
 
@@ -533,6 +533,7 @@ span{
   .boxx img{
     max-width: 100%;
     width: 500px;
+    max-width: 95%;
     height: auto;
     background-size: cover;
     background-position: center;
