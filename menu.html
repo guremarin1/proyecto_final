@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="icons/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Menú del café</title>
+    <meta name="keywords" content="comida saludable, café colombiano, café italiano, café japones, postre japones, postre coreano, comida coreana, pan tostado, almuerzos, desayunos, meriendas, vegano, gluten free">
+</head>
+
+<body>
+
+    <!-- __Header__ -->
+    <header class="header">
+        <div class="logo">
+            <a href="/index.html"><img src="img/yugen_logo.png" alt="Logo de la marca"></a>   
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="paraleer.html">Para leer</a></li>
+                <li><a href="yugencafe.html">Yugen Café</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+        <button class="bars" onclick="toogleNavMobile('#header-mobile')">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <div class="usershop">
+            <div class="userheader">
+                <a href="#"><img src="icons/user.svg" alt="login"></a>
+            </div>
+            <div class="shopheader">
+               <a href="#"><img src="icons/bag.svg" alt="carrito"></a>
+            </div>
+        </div>
+    </header>
+    <nav id="header-mobile" class="hide-mobile-nav">
+        <ul class="nav-links">
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="paraleer.html">Para leer</a></li>
+            <li><a href="yugencafe.html">Yugen Café</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
+
+    <!-- __Main__ -->
+    <main>
+        <div class="bienvenida-menu">
+            <section class="content-bienvenida">
+            <h3 class="title-secon">Acompaña tu lectura 🍵</h3>
+            <h1 class="title-principal">Disfuta de los mejores 
+                té al estilo japonés</h1>
+            <br>
+            <a class="cta" href="reservas.html">No me lo pierdo</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- ___Value Label __ -->
+    <div class="label-menu">
+        <div class="label-item-menu">
+            <article class="label-items1"><img src="icons/amor.png" height="55px" width="auto" alt="Petfriendly"></article>
+            <article class="label-items2"><img src="icons/gluten-free.png" height="55px" width="auto" alt="Gluten free"></article>
+            <article class="label-items3"><img src="icons/reciclar-senal.png" height="55px" width="auto" alt="Reciclamos"></article>
+            <article class="label-items4"><img src="icons/vegano.png" height="55px" width="auto" alt="Platos veganos y vegetarianos"></article>
+        </div>
+    </div>
+
+    <!-- SECCIONES -->
+
+    <!-- ______Cafeteria_____ -->
+
+    <section class="portafolio" id="portafolio">
+        <div class="centerr">
+            <h2>Cafetería</h2>
+            <p>Disfuta de la variedad de nuestros cafés al mejor estilo  Italiano, Colombiano, <b>Japonés y Coreano</b>.</p>
+        </div>
+
+        <div class="portafolio-content">
+            <div class="boxx">
+                <img src="img/cafe1-tradiciona.jpg" alt="Cafés tradicionales">
+                <p>Cafe tradicional</p>
+                <h4>Expressos, Latte, Mocca, Cappuccino y más</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/cafe2-art.jpeg" alt="Art latte, japanesse coffee">
+                <p>Arte Japonés</p>
+                <h4>Cafetería al estilo japonés kawaii</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/cafe3-dalgona.jpg" alt="Cafés especiales, dalgona coffee">
+                <p>Korean aesthetic</p>
+                <h4>Idols Coffe </h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/tea1-flores.jpg" alt="Té en hebras, té de flores">
+                <p>Té en hebras, florales y frutales</p>
+                <h4>Aromas texturas y olores en una taza de té</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/tea1-green.jpg" alt="Té verde">
+                <p>Té para el alma</p>
+                <h4>Infusiones naturales que sanan</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/tea2-matcha.jpg" alt="Té de matcha">
+                <p>Legendarío asiatico</p>
+                <h4>Té de Matcha</h4>
+            </div>
+            
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <!-- ______Comidas_____ -->
+        <div class="centerr">
+            <h2>Comidas</h2>
+            <p>Tenemos los mejores platos para tí. Además contamos con platos <b> veganos,vegetarianos y celíacos </b></p>
+        </div>
+
+        <div class="portafolio-content">
+            <div class="boxx">
+                <img src="img/almuerozo-1.jpeg" alt="Almuerzos al estilo japonés, koreano">
+                <p>Platos fuertes</p>
+                <h4>Almuerzos energéticos</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/almuerozo-2.jpg" alt="Ensaladas">
+                <p>Ensaladas</p>
+                <h4>Arma la ensalada a tu gusto</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/almuerozo-3.jpg" alt="Tostados y sandwich">
+                <p>Entre panes</p>
+                <h4>Los mejores tostados</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/desayuno-1.jpg" alt="Desayunos protéicos">
+                <p>Desayunos proteícos</p>
+                <h4>Consiguelo en versión vegana y celíaca</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/desayuno-2.jpg" alt="Bowl de frutas y yogurt">
+                <p>Bowls naturales</p>
+                <h4>Arma el bol a tu gusto</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/desayuno-3.jpg" alt="Desayuno clásico argentino">
+                <p>Medialunas y croissants</p>
+                <h4>Acompaña con un rico café</h4>
+            </div>
+            
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <!-- ______Postres y bebidas_____ -->
+
+        <div class="centerr">
+            <h2>Postres y meriendas</h2>
+            <p>Date un gusto que la vida es duce </p>
+        </div>
+
+        <div class="portafolio-content">
+            <div class="boxx">
+                <img src="img/postre-1.jpg" alt="Postre al estílo japonés">
+                <p>Postres al estílo japonés</p>
+                <h4>Suavidad y esponjosidad</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/postre-2.jpg" alt="Tortas y brownies">
+                <p>Tortas y brownies</p>
+                <h4>Delicias de chocolate</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/postre-3.jpg" alt="Postres veganos">
+                <p>Veganos</p>
+                <h4>Postres veganos</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/postre-4.jpg" alt="Bebidas coreanas">
+                <p>Bubble tea</p>
+                <h4>Bebidas Idols</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/postre-5.jpeg" alt="Bebidas refrescantes de frutas">
+                <p>Futales</p>
+                <h4>Bebidas refrescantes</h4>
+            </div>
+
+            <div class="boxx">
+                <img src="img/postre-6.jpg" alt="Café frío">
+                <p>Se sirve frío</p>
+                <h4>Variedad en cafés fríos</h4>
+            </div>
+            
+        </div>
+
+    </section>
+
+    
+
+    <!-- ______Despedida_____ -->
+
+    <section class="despedida"></section>    
+
+</body>
+
+
+    <!-- ____Footer____ -->
+
+    <footer>
+        <div class="container">
+            <div class="wraper">
+                <div class="footer-widget">
+                    <a href="#">
+                        <img src="img/yugenlogo-black.png" alt="Logo de la marca" class="logo">
+                    </a>
+                    <p><b>Un té, un libro y a disfutar …</b> 
+                        <br>
+                        De martes a domingo de 7 a 21 hrs 
+                    </p>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>     
+                    </ul>
+            </div>
+            <div class="footer-widget">
+                <h4>Sitio</h4>
+                <ul class="link">
+                    <li><a href="index.html">Incio</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="paraleer.html">Para leer</a></li>
+                    <li><a href="yugencafe.html">Yugen Café</a></li>
+                    <li><a href="reservas.html">Reservas</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-widget">
+                <div class="info">
+                    <h4>Ven a visitarnos</h4>
+                <ul class="link">
+                    <li>Malabia 1720 | (1704) Palermo</li>
+                    <li>Buenos Aires | Argentina</li>
+                    <li>+54 9 11 39838887</li>
+                    <li><a href="https://goo.gl/maps/hNaJNJ2vdKoAG8oK6">Ver mapa</a></li>
+                </ul>
+    
+                </div>
+                
+            </div>
+    
+            <div class="footer-widget">
+                <div class="pay">
+                    <h4>Medios de pago</h4>
+                    <ul class="link">
+                        <li>Efectivo</li>
+                        <li>Débito</li>
+                        <li>Crédito</li>
+                        <li><a href="#">Ver otros</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            </div>
+    
+        </div>
+    
+        <div class="copyright-wrapper">
+            <p>Yugen Café. Todos los derechos reservados 2022</p>
+        </div>
+    
+    </footer>
+    <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</html>

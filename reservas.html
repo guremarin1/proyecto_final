@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="icons/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Reservas</title>
+</head>
+
+
+<body>
+
+    <!-- __Header__ -->
+    <header class="header">
+        <div class="logo">
+            <a href="/index.html"><img src="img/yugen_logo.png" alt="Logo de la marca"></a>   
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="paraleer.html">Para leer</a></li>
+                <li><a href="yugencafe.html">Yugen Café</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+
+        <button class="bars" onclick="toogleNavMobile('#header-mobile')">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        
+        <div class="usershop">
+            <div class="userheader">
+                <a href="#"><img src="icons/user.svg" alt="login"></a>
+            </div>
+            <div class="shopheader">
+               <a href="#"><img src="icons/bag.svg" alt="carrito"></a>
+            </div>
+        </div>
+    </header>
+    <nav id="header-mobile" class="hide-mobile-nav">
+        <ul class="nav-links">
+            <li><a href="menu.html">Menú</a></li>
+            <li><a href="paraleer.html">Para leer</a></li>
+            <li><a href="yugencafe.html">Yugen Café</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+        </ul>
+    </nav>
+
+    <!-- Formulario -->
+
+    <section class="contact">
+        <div class="contact-form">
+            <h1>Agenda tu <span>reserva</span></h1>
+            <h4>Queremos que estés <b>cómodo</b> y tengas un espacio propio.</h4>
+            <p>Por lo que manejamos el sistema de resarva. De igual maner puedes venir cuando quieras sin necesidad de alguna o disfrutas nuestros servicios <b>takeaway</b>.  
+            <br><br>🌈​ Completa el <b>formularío</b> y nos pondremos en contacto en breve.
+            </p>
+ 
+            <form action="">
+                <input type="" placeholder="Ingresa tu nombre y apellido" required>
+                <input type="telefon" name="telefon" id="" placeholder="Ingresa Nº de teléfono" required>
+                <input type="" placeholder="Dia de la reserva. Ej: 20/11/2022" required>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Contanos el motivo de la visita y horario estimado. Ejem. Voy a leer manga en la biblioteca de 3:00pm a 6:00pm" required></textarea>
+                <input type="submit" name="" value="¡Enviar! 🤖​" class="cta">
+            </form>
+        </div>
+
+            <div class="contact-img">
+                <img src="img/estamos trabajando.gif" alt="Reserva tu mesa">
+            </div>    
+    </section>
+
+
+    <!-- ______Despedida_____ -->
+
+    <section class="despedida-3"></section> 
+    
+</body>
+
+<!-- ____Footer____ -->
+
+<footer>
+    <div class="container">
+        <div class="wraper">
+            <div class="footer-widget">
+                <a href="#">
+                    <img src="img/yugenlogo-black.png" alt="Logo de la marca" class="logo">
+                </a>
+                <p><b>Un té, un libro y a disfutar …</b> 
+                    <br>
+                    De martes a domingo de 7 a 21 hrs 
+                </p>
+                <ul class="socials">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-spotify"></i></a></li>     
+                </ul>
+        </div>
+        <div class="footer-widget">
+            <h4>Sitio</h4>
+            <ul class="link">
+                <li><a href="index.html">Incio</a></li>
+                <li><a href="menu.html">Menú</a></li>
+                <li><a href="paraleer.html">Para leer</a></li>
+                <li><a href="yugencafe.html">Yugen Café</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-widget">
+            <div class="info">
+                <h4>Ven a visitarnos</h4>
+            <ul class="link">
+                <li>Malabia 1720 | (1704) Palermo</li>
+                <li>Buenos Aires | Argentina</li>
+                <li>+54 9 11 39838887</li>
+                <li><a href="https://goo.gl/maps/hNaJNJ2vdKoAG8oK6">Ver mapa</a></li>
+            </ul>
+
+            </div>
+            
+        </div>
+
+        <div class="footer-widget">
+            <div class="pay">
+                <h4>Medios de pago</h4>
+                <ul class="link">
+                    <li>Efectivo</li>
+                    <li>Débito</li>
+                    <li>Crédito</li>
+                    <li><a href="#">Ver otros</a></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+    <div class="copyright-wrapper">
+        <p>Yugen Café. Todos los derechos reservados 2022</p>
+    </div>
+
+</footer>
+<script src="script.js"></script>
+</html>

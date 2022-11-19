@@ -1,0 +1,1315 @@
+/* __Fonts__ 
+'DM Serif Display', serif;
+'Lato', sans-serif; */
+@import url('https://fonts.googleapis.com/css2? family= DM+Serif+Display & family= Lato:wght@100;300;400;700 & display=swap');
+
+:root{
+    --pink:#F2708B;
+    --bronw: #542d24;
+    --black: #121212;
+    --dark-gray:#323232; 
+    --gray:#666666;
+    --soft-gray:#F4F4F4;
+    --soft-white: #fffef9;
+    --white:#ffffff;
+    --font-lato:'Lato', sans-serif;
+    --font-dm:'DM Serif Display', serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--white);
+    
+}
+
+/* __Style Guide__ */
+h1{
+    font-family: var(--font-dm);
+    font-size: 48px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+h2{
+    font-family: var(--font-dm);
+    font-size: 36px;
+    font-weight: 400;
+    padding-bottom: 16px;
+}
+h3{
+    font-family: var(--font-lato);
+    font-size: 24px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+h4{
+    font-family: var(--font-lato);
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 8px;
+}
+
+p{
+    font-family: var(--font-lato);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+span{
+    color: var(--pink);
+}
+
+/* __Components__ */
+/* incluir el header y footer aqui que se repiten en todas las secciones */
+
+.cta{
+    background-color: var(--pink);
+    color: var(--white);
+    font-family: var(--font-lato);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    padding: 13px 24px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+}
+.cta:hover{
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid rgb(255, 159, 175);
+    cursor: pointer;
+}
+
+/* _______HEADER_______ */
+
+.header{
+    background-color: #fffef9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 100px;
+    padding: 5px 10px;
+
+
+}
+
+.header .logo{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 10px;
+    transition: all 0.3s;     
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav .list{
+    width: max-content;
+}
+
+.nav-links li{
+    display: inline-block;
+    padding-left: 20px;
+
+}
+
+.nav-links li:hover{
+    transform: scale(1.1) ;
+}
+
+.nav-links a{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: #373737; 
+    
+}
+
+.nav-links li a:hover{
+    color: #F2708B;
+}
+
+.usershop{
+    height: auto;
+    width: 100px;
+    display: flex;
+    justify-content:space-between;
+    margin-right: 50px;
+    padding-right: 20px;    
+}
+
+
+.bars{
+    color: #F2708B;
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+
+#header-mobile {
+    min-width: 400px;
+    background: var(--soft-white);
+    height: 100%;
+    position: fixed;
+    position: absolute;
+    right: 0;
+    transition: 0.5s;
+}
+#header-mobile .nav-links{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 20px;
+    padding: 20px 20px 0 0;
+}
+
+#header-mobile li {
+    margin-bottom: 15px;
+}
+
+#header-mobile a {
+    font-size: 1.5rem;
+}
+.hide-mobile-nav {
+    right: -100% !important;
+}
+/* __Main__ */
+
+.content-bienvenida{
+    height: 100px;
+    width: 600px;
+    padding-top: 150px;
+    padding-left: 50px;
+ }
+
+
+ /* .....baner home..... */
+
+ .bienvenida{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/banner-main.png);
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+ }
+
+ .title-secon{
+    color: var(--soft-gray);
+ }
+
+ .title-principal{
+    color: var(--white);
+    padding-bottom: 20px;
+ }
+
+ /* __Value label__ */
+
+ .label-home{
+    width: 100%;
+    height: auto;
+}
+
+.label-items{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    filter: grayscale(100%);  
+}
+
+ /* ___Secciones: Home___ */
+
+ /* --About-- */
+
+.about{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-about{
+    padding: 20px;
+}
+.title-principal-about{
+    text-align: center;
+    color: var(--bronw);
+}
+
+.title-secon-about{
+    text-align: center;
+    color: var(--pink);
+}
+
+.p-about{
+    text-align: center;
+    line-height: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20px;
+    color: var(--dark-gray);   
+}
+
+.about-parallax{
+    background: fixed no-repeat 50% 50% url(img/mangacafe.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+    border-radius: 3px;
+    height: 500px;
+    width: 70%;
+    margin: 10px auto;
+    margin-bottom: 50px;
+
+}
+
+.about span{
+    color: var(--pink);
+}
+
+/* --Destacado-- */
+.destacado-home{
+    background-color:var(--white);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    height: auto;
+    width: 100%;
+    grid-gap: 30px;
+    
+}
+
+.destacado-home img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.destacado-text{
+    width: 90%;
+    padding-left: 40px;
+      
+}
+
+.destacado-text h2{
+    color: var(--bronw);
+    font-size: 55px;
+    padding-bottom: 40px;
+}
+
+.destacado-text h4{
+    color: var(--pink);
+}
+
+/* __galeria___ */
+
+.galeria{
+    background-color: var(--white);
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(8, 200px);
+    grid-gap: 20px;
+    padding: 20px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+}
+
+.item{
+  width: 100%;
+  border-radius: 2px;
+} 
+
+
+/* .item:hover{
+    transform: scale(1.05);
+    transition: all 1.5s;
+    filter: grayscale(100%);
+} */
+
+.item1{
+    background-color: var(--white);
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.item1 h2{
+    font-size: 28px; 
+}
+
+.item1 h4{
+    color: var(--pink);
+    font-size: 14px;    
+}
+
+.item1 .cta{
+    background-color: var(--white);
+    color: var(--pink);
+    font-family: var(--font-lato);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid var(--pink);
+}
+
+.item2{
+    background-image: url(img/matcha-g520422cf0_1280.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3{
+    background-image: url(img/dessert-g1d85f829a_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(163, 12, 193);
+
+}
+
+.item4{
+    background-image: url(img/breakfast-g0d07147c1_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(255, 0, 162);
+
+}
+
+.item5{
+    background-image: url(img/coffee-g2422f96d2_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(0, 153, 255);
+
+}
+
+.item6{
+    background-image: url(img/mixed-berries-ge46fe84a2_640.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(254, 171, 236);
+
+}
+
+/* --Arrival-- */
+
+.arrival-home{
+    background-color: var(--dark-gray);
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    height: auto;
+    width: 100%;
+    grid-gap: 30px;
+    
+}
+
+.arrival-home img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.arrival-text{
+    width: 90%;
+    padding-left: 40px;
+      
+}
+
+.arrival-text h2{
+    color: var(--white);
+    padding-bottom: 40px;
+}
+
+.arrival-text h4{
+    color: var(--pink);
+}
+
+.p-arrival{
+    color: var(--soft-gray);
+    padding-bottom: 24px;
+}
+
+.p-arrival span{
+    color: var(--pink);
+}
+
+/* --Menssage-- */
+
+.menssage-home{
+    background-color:var(--white);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 100px;
+    
+}
+
+.menssage-home img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* --Menu2-- */
+
+.span-menu{
+    color: var(--pink);
+}
+
+
+
+/* ___Seccion: Menú del café__ */
+
+.bienvenida-menu{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/banner-menu-matcha.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(210, 239, 203);
+  }
+
+  .centerr{
+    text-align: center;
+  }
+
+  .centerr h2{
+    color: var(--white);
+  }
+
+  .centerr p{
+    color: var(--soft-gray);
+    font-size: 18px;
+  }
+
+  .portafolio{
+    padding: 120px 10%;
+    background: linear-gradient(to top, #270900, #100401,#0c0c0c);
+  }
+
+  .portafolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+    cursor: pointer;
+  }
+
+  .boxx img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .30s;
+  }
+  
+  .boxx img:hover{
+    transform: scale(1.1);
+  }
+
+  .boxx p{
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 15.5px;
+  }
+  .boxx h4{
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+  }
+
+   /* __Value label menu__ */
+
+ .label-menu{
+    width: 100%;
+    height: auto;
+    background-color: #0c0c0c;
+    padding-top: 20px;
+    
+}
+
+.label-item-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    filter: grayscale(100%);  
+}
+
+
+
+/* ___Para leer__ */
+
+.bienvenida-paraleer{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/banner-lectura.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(210, 239, 203);
+  }
+
+  .portafolio-libros{
+    padding: 120px 10%;
+    background: linear-gradient(to top, #270900, #100401,#0c0c0c);
+  }
+
+  .portafolio-content-libros{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+    cursor: pointer;
+  }
+
+  .boxxx img{
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    transition: all .30s;
+  }
+  
+  .boxxx img:hover{
+    transform: scale(1.1);
+  }
+
+
+  .centerr h3{
+    color: var(--pink);
+    font-size: 16px;
+  }
+
+  .boxxx p{
+    color: gray;
+    margin-bottom: 10px;
+    font-size: 15.5px;
+  }
+  .boxxx h4{
+    color: rgb(219, 219, 219);
+    font-size: 16px;
+  }
+
+
+
+/* ___Yugen Cafe__ */
+
+.bienvenida-yugencafe{
+    height: 100vh;
+    width: 100%;
+    background-image: url(img/banner-yugencafe.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(210, 239, 203);
+  }
+
+  .yugencafe-img{
+    background-image: url(multimedia/sirviendo-te-anime.gif);
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+    border-radius: 3px;
+    height: 500px;
+    width: 70%;
+    margin: 10px auto;
+    margin-bottom: 50px;
+
+  }
+
+/* __Servicio___ */
+
+  .service{
+    position: relative;
+    width: auto;
+    height: 100%;
+    background-color: #fff9f9eb;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .service-content{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .service-content img{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  /* ___Team___ */
+
+  .team{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, #F5E4D8, #fff5ef,#fffefd);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .team-content{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  .team-content img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 15px;  
+  }
+
+  .center h2{
+    color: var(--bronw);
+    text-align: center;
+  }
+
+  .box{
+    padding: 16px;
+    background: #fffbfc55;
+    border-radius: 15px;
+    transition: all .38s ease;
+  }
+
+  .box:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+
+  .box h4{
+    font-size: 16px;
+    color: var(--gray);
+  }
+
+  .icons i{
+    display: inline-block;
+    color: var(--pink);
+    font-size: 20px;
+    margin: 0 6px;
+    transition: all .38s ease;
+  }
+
+  .icons i:hover{
+    transform: scale(1.2);
+  }
+
+
+  
+
+
+
+  /* __Despedida__ */
+
+  .despedida{
+    height: 250px;
+    width: 100%;
+    background-image: url(img/banner-mascota-yuge.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+ }
+
+ .despedida-2{
+    height: 250px;
+    width: 100%;
+    background-image: url(img/banner-mascota-yuge-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+ }
+
+ .despedida-3{
+    height: 250px;
+    width: 100%;
+    background-image: url(img/banner-mascota-yuge-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: pink;
+ }
+
+
+/* Reservas */
+
+.contact{
+    padding: 40px 15%;
+    background: var(--black);
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+.contact-form h1, h4{
+    color: var(--white);
+}
+
+.contact-form p{
+    color: var(--soft-gray);
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 3.8rem;
+}
+
+.contact-form form{
+    position: relative;
+}
+
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 17px;
+    border: none;
+    background: var(--dark-gray);
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contact-form textarea{
+    resize: none;
+    height: 200px;
+}
+
+.contact-form form .cta{
+    display: inline-block;
+    background-color: var(--pink);
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+
+.contact-form form .cta:hover{
+    border: 2px solid var(--white);
+    background: transparent;
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* ____FOOTER____ */
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    flex-direction: column;
+    background-color: var(--black);
+    color: var(--soft-gray);
+}
+.container{
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.wraper{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wraper .footer-widget{
+    width: calc(20% - 30px);
+    margin: 0 15px 50px;
+    padding: 0 12px;
+}
+
+.wraper .footer-widget:nth-child(1){
+    width: calc(40% - 50px);
+    margin: 15px;
+
+}
+
+.wraper .footer-widge .logo{
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+
+.logo{
+    height: 70px;
+    width: auto;
+    margin-bottom: 16px;
+}
+
+.wraper .footer-widge p{
+    margin-bottom: 30px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 16px;
+}
+.socials li{
+    list-style: none;
+}
+
+.socials li a{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    color: #F2708B;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.socials li a:hover{
+    color: #ffbf00;
+}
+
+footer h4{
+    color: #ff315a;
+    padding-bottom: 16px;
+    
+}
+
+.footer-widget .link{
+    list-style: none;
+}
+.footer-widget .link a{
+    font-family: 'Lato', sans-serif;
+    color: var(--soft-gray);
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 24px;
+    transition: all 0.3s ease-out;
+
+}
+
+.footer-widget .link a:hover{
+    color: #F2708B;
+}
+
+.footer-widget .info{
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: rgb(238, 238, 238);
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 24px;
+
+}
+
+.footer-widget .pay{
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    color: rgb(238, 238, 238);
+    font-size: 14px;
+    text-decoration: none;
+    line-height: 24px;
+
+}
+
+
+
+
+
+
+
+/* _____Responsive____ */
+
+/* --responsive galería home--*/
+@media (min-width:1024px){
+    .galeria{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 200px 200px;
+    }
+
+        .item1{
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .item2{
+        grid-column: 3/2;
+        grid-row: 1/3;
+    }
+
+}
+
+@media only screen and (min-width:768px)and (max-width:1023px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 200px);
+
+    }
+
+    .item1{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .item6{
+        display: none;
+ 
+    }
+
+}
+
+@media only screen and (min-width:480px)and (max-width:768px){
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 200px);    
+    }
+
+    .item1{
+        grid-column: 1/4;
+    }
+    .item2{
+        grid-column: 1/4;
+    }
+    
+
+    .item6{
+        display: none;
+ 
+    }
+
+
+}
+
+@media only screen and (min-width:320px)and (max-width:480px){
+    .galeria{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 200px);    
+    }
+
+    
+    .item5{
+        display: none;
+ 
+    }
+
+
+    .item6{
+        display: none;
+ 
+    }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px){
+    
+
+    /* _______HEADER nota: solo faltaría el menú desplegable________ */
+    
+        .header{
+            height: 60px; 
+        }
+    
+        .header .logo img{
+            height: 40px;
+            margin-top: 20px;
+    
+        }
+    
+        .header nav, .usershop{
+            display: none;
+        }
+    
+    
+        .header .bars{
+            display: block;
+            cursor: pointer;
+        }
+
+
+
+         /* --Home-- */
+
+        .content-bienvenida{
+             width: 95%;
+             padding-top: 50px;
+             padding-left: 20px;
+
+        }
+
+        h1{
+        font-size: 40px;
+        }
+
+        /* --About-- */
+
+        .content-about p{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        /* --Destacado-- */
+
+        .destacado-home{
+            grid-template-columns: 1fr;
+            align-items: center;
+            height: auto;
+            width: 100%
+        }
+        .destacado-text h2{
+            font-size: 50px;
+            padding-bottom: 40px;
+        }
+
+        /* --Arrival-- */
+
+        .arrival-home{
+            grid-template-columns: 1fr;
+            align-items: center;
+            height: auto;
+            width: 100%
+        }
+
+        /* _____FOOTER______ */
+        .container {
+            max-width: 720px;
+        }
+
+        .wraper .footer-widget,
+        .wraper .footer-widget:nth-child(1){
+            width: 100%;
+            margin: 0 40px 50px;
+
+        }
+
+        /* ___Servicios__ */
+
+
+        .service{
+            width: auto;
+            height: 100%;
+            padding: 100px 4%;
+          }
+    
+        .service-content{
+            grid-template-columns: 1fr;
+        }
+
+        .service-content img{
+            width: auto;
+            height: 400px;
+            
+          }
+
+
+
+}
+
+
+
+
+@media (max-width: 992px){
+
+    /* ____HOME__ */
+
+    /* ____seccion about____ */
+
+    .p-about{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-parallax{
+        background:none;
+        background-image: url(img/mangacafe.jpeg);
+        background-size: cover;
+        background-position: center;
+    
+    }
+
+    /* --Destacado-- */
+
+    .destacado-home{
+        grid-template-columns: 1fr;
+        align-items: center;
+        height: auto;
+        width: 100%
+    }
+
+    .destacado-text{
+        width: 90%;
+        margin: 20px;
+        padding-left: 20px;      
+    }
+
+    /* _______FOOTER_________ */
+
+    .container{
+        max-width: 960px;   
+    }
+
+    .wraper .footer-widget,
+    .wraper .footer-widget:nth-child(1){
+        width: calc(50% - 30px);
+
+    }
+
+    /* ____Team___ */
+
+    .team{
+        width: 100%;
+        height: auto;
+        padding: 90px 2%;
+    }
+
+    .center h2{
+        font-size: 3.2rem;
+    }
+
+}
+
+@media (max-width: 1000px){
+     /* ____Contacto___ */
+
+    .contact{
+        grid-template-columns: 1fr;
+
+    }
+
+    .contact-form{
+        order: 2;
+    }
+
+    .contact-img img{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+
+
+}
+
+
+@media (max-width: 1090px){
+    
+    /* ____Contacto___ */
+
+    .contact{
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+}
+
+
+@media (max-width: 1570px){
+    
+    /* ____Contacto___ */
+
+    .contact{
+        padding: 80px 3%;
+        transition: .2s;
+
+    }
+
+    .contact-form h1{
+        font-size: 40px;
+    }
+
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+
